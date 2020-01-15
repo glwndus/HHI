@@ -1,0 +1,356 @@
+#course {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 30px 0px;
+    overflow: auto;
+}
+
+#cleft {
+    float: left;
+    width: calc(100% - 300px);
+    padding-right: 10px;
+}
+
+#cleft p {
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+#cleft img {
+    display: block;
+    width: 100%;
+}
+
+#cright {
+    float: left;
+    width: 300px;
+    height: 490px;
+    overflow: auto;
+    background-color: #fafafa;
+    padding: 1em;
+}
+
+.room {
+    overflow: auto;
+    margin-bottom: 1.2em;
+}
+
+.room div:first-of-type {
+    float: left;
+    width: 90px;
+    margin-right: 8px;
+}
+
+.room div:last-of-type {
+    float: left;
+    width: calc(100% - 98px);
+}
+
+.room p {
+    margin-bottom: 5px;
+    letter-spacing: -0.07em;
+}
+
+.room p:first-of-type {
+    font-weight: 800;
+}
+
+.room p:last-of-type {
+    font-size: 0.87em;
+}
+
+.btn {
+    display: inline-block;
+    width: 240px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #31363e;
+    color: white;
+    font-size: 1.1em;
+}
+
+.btn-mark {
+    background-color: #134ea0;
+}
+
+/*체크모달 스타일*/
+#checkmodal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 10000;
+    display: none;
+}
+
+#cmodalbox {
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 940px;
+    max-height: 590px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+}
+
+#cmodalbox h4 {
+    font-size: 1.3em;
+    color: #0c4da2;
+    margin-bottom: 0.7em;
+}
+
+#cmodalbox>p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+#cmodalbox>p::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 3px;
+    background-color: #0c4da2;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+#cmodalbox hr {
+    margin-top: 0.7em;
+    margin-bottom: 1.1em;
+}
+
+#movecenter {
+    max-width: 530px;
+    width: 100%;
+    margin: auto;
+}
+
+#movecenter p {
+    text-align: center;
+    font-size: 1.08em;
+    font-weight: bold;
+    color: #0c4da2;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/*체크모달 내 표 스타일*/
+#movecenter table {
+    min-width: auto;
+    border-top: 1px solid #d1e0ea;
+    margin-bottom: 150px;
+}
+
+#movecenter th,
+#movecenter td {
+    border-bottom: 1px solid #d1e0ea;
+    border-image: none;
+}
+
+#movecenter th {
+    font-weight: normal;
+    text-align: right;
+    border-color: #f0f7fc;
+    word-break: keep-all;
+}
+
+#movecenter td {
+    padding-right: 40px;
+}
+
+#movecenter input {
+    height: 32px;
+    border: 1px solid #cecece;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+#movecenter input[name="username"]{
+    width: 100%;
+}
+
+#movecenter input[name^="tel"]{
+    width: 26%;
+    float: left;
+}
+
+#movecenter span {
+    float: left;
+    display: block;
+    width: 11%;
+    text-align: center;
+    line-height: 32px;
+}
+
+#cmodalbox .btn {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9em;
+}
+ 
+/*공장 투어 코스*/
+
+.tourbox {
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.tourbox img {
+    float: left;
+    max-width: 70%;
+}
+
+.tourbox ul {
+    float: left;
+    padding: 30px;
+}
+
+/*오시는 길*/
+
+#tourinfo {
+    list-style: none;
+    overflow: auto;
+}
+
+.bmark {
+    background-color: #134ea0;
+    color: white;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-right: 5px;
+}
+
+#tourinfo ul {    
+    display: block;
+}
+
+#tourinfo li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#tourmap {
+    padding-top: 70px;
+    overflow: auto;
+}
+
+#tourmap a {
+    display: block;
+}
+
+
+
+
+
+
+@media all and (max-width: 1025px){
+    #cleft, #cright {
+        float: none;
+        width: 100%;
+    }
+    
+    #cright {
+        height: auto;
+    }
+    
+    .room {
+        width: 50%;
+    }
+
+    .room:nth-of-type(odd) {
+        float: left;        
+    }
+    .room:nth-of-type(even) {
+        float: right;        
+    }
+    
+    .room div:last-of-type {
+        padding-right: 10px;
+    }
+    
+    .btn {
+        width: 140px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media all and (max-width:650px) {
+    /*공장 투어 코스*/
+    .tourbox img {
+        max-width: 100%;
+    }
+
+    .tourbox li {
+        float: left;
+        width: 50%;
+    }
+    
+    .tourbox ul {
+        padding: 10px;
+        float: none;
+    }
+    
+    /*오시는 길*/
+    
+}
+
+
+@media all and (max-width: 600px) {
+    #cright {
+        height: 200px;
+    }
+    
+    .room {
+        width: 100%;
+        float: none;
+    }
+    
+    #movecenter table {
+        margin-bottom: 30px;
+    }
+    
+    #movecenter p {
+        margin-top: 30px;
+    }
+    
+    #movecenter th,
+    #movecenter td {
+        padding: 0.4em 0.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
